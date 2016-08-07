@@ -1,5 +1,4 @@
 #Coding exercise
----
 ## Installation Instructions
 1. Clone this repository
 ```github
