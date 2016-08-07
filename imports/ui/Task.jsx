@@ -34,7 +34,7 @@ export default class Task extends Component {
 
 	changePriority(e) {
 		e.preventDefault();
-		const priority = ReactDOM.findDOMNode(this.refs.priority).value;
+		const priority = parseInt(ReactDOM.findDOMNode(this.refs.priority).value);
 		Tasks.update(this.props.task._id, {
 			$set: { priority: priority }
 		});
