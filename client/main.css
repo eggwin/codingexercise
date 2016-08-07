@@ -1,0 +1,175 @@
+body {
+	font-family: sans-serif;
+	background-color: #abcdef;
+	background-image: linear-gradient(to bottom, #abcdef, #fedcba 100%);
+	background-attachment: fixed;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	padding: 0;
+	margin: 0;
+
+	font-size: 14px;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+	min-height: 100%;
+	background: white;
+}
+
+.notify {
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+header {
+	background: #ebebeb;
+	background-image: linear-gradient(to bottom, #ddeeff, #ffeedd 100%);
+	padding: 20px 15px 15px 15px;
+	position: relative;
+}
+
+#login-buttons {
+	display: block;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin: 0;
+	margin-bottom: 10px;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+form {
+	margin-top: 10px;
+	margin-bottom: -10px;
+	position: relative;
+}
+
+form.edit-task input.text {
+	box-sizing: border-box;
+	padding: 10px 0;
+	background: transparent;
+	border: none;
+	width: 100%;
+	padding-right: 80px;
+	font-size: 2em;
+	font-weight: 700;
+}
+
+form.edit-task input.text:focus {
+	border: 3px solid #ff0000;
+	outline: none;
+}
+
+.new-task input {
+	box-sizing: border-box;
+	padding: 10px 0;
+	background: transparent;
+	border: none;
+	width: 100%;
+	padding-right: 80px;
+	font-size: 1em;
+}
+
+.new-task input:focus{
+	outline: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	background: white;
+}
+
+.delete {
+	float: right;
+	font-weight: bold;
+	background: none;
+	font-size: 1em;
+	border: none;
+	position: relative;
+}
+
+.delete:hover, .edit:hover, header fieldset label, header fieldset label input[type="radio"] {
+	cursor: pointer;
+}
+
+button.edit {
+	float: right;
+	background: none;
+	border: 1px solid #000;
+	font-size: 1em;
+	position: relative;
+}
+
+button.edit:disabled {
+	border: 1px solid #ddd;
+	color: #ddd;
+	text-decoration: line-through;
+}
+
+button.edit:disabled:hover {
+	cursor: default;
+}
+
+li {
+	position: relative;
+	list-style: none;
+	padding: 15px;
+	border-bottom: #eee solid 1px;
+}
+
+li .text {
+	margin-left: 10px;
+}
+
+li.checked {
+	color: #888;
+	background-color: #ebebeb;
+}
+
+li.checked .text {
+	text-decoration: line-through;
+}
+
+li.checked .date {
+	color: #ccc;
+}
+
+.priorityContainer, .targetDateContainer {
+	width: 100%;
+	margin: 10px;
+}
+
+header .show {
+	float: left;
+	clear: both;
+}
+
+.emphasis {
+	font-size: 1em;
+	font-weight: 700;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.hide {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	li {
+		padding: 12px 15px;
+	}
+
+	.new-task input {
+		padding-bottom: 5px;
+	}
+}
